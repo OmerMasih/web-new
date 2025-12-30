@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #0a2540;
+  padding: 15px 30px;
+}
+
+.logo {
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a,
+.nav-links button {
+  color: white;
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.section {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.section h1,
+h2 {
+  color: #0a2540;
+}
+
+/* Modal Forms */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.form-box {
+  background: white;
+  padding: 30px;
+  width: 300px;
+  border-radius: 8px;
+}
+
+.form-box input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.form-box button {
+  width: 100%;
+  padding: 10px;
+  background: #0a2540;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.close {
+  background: #aaa;
+  margin-top: 10px;
+}

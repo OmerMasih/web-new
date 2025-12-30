@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Full Stack Web Development</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="logo">FullStackDev</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#resources">Resources</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button onclick="openForm('login')">Login</button></li>
+        <li><button onclick="openForm('signup')">Sign Up</button></li>
+      </ul>
+    </nav>
+
+    <!-- Sections -->
+    <section id="home" class="section">
+      <h1>Welcome to Full Stack Web Development</h1>
+      <p>Learn HTML, CSS, JavaScript, Backend & Databases</p>
+    </section>
+
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>
+        This platform helps beginners learn full stack web development step by
+        step.
+      </p>
+    </section>
+
+    <section id="resources" class="section">
+      <h2>Resources</h2>
+      <ul>
+        <li>HTML & CSS Basics</li>
+        <li>JavaScript Fundamentals</li>
+        <li>Backend Development</li>
+        <li>Databases & APIs</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Email: info@fullstackdev.com</p>
+    </section>
+
+    <!-- Login Form -->
+    <div class="modal" id="login">
+      <div class="form-box">
+        <h2>Login</h2>
+        <input type="email" id="loginEmail" placeholder="Email" />
+        <input type="password" id="loginPassword" placeholder="Password" />
+        <button onclick="login()">Login</button>
+        <button class="close" onclick="closeForm('login')">Close</button>
+      </div>
+    </div>
+
+    <!-- Signup Form -->
+    <div class="modal" id="signup">
+      <div class="form-box">
+        <h2>Sign Up</h2>
+        <input type="text" id="signupName" placeholder="Full Name" />
+        <input type="email" id="signupEmail" placeholder="Email" />
+        <input type="password" id="signupPassword" placeholder="Password" />
+        <button onclick="signup()">Sign Up</button>
+        <button class="close" onclick="closeForm('signup')">Close</button>
+      </div>
+    </div>
+
+    <script src="/index.js"></script>
+  </body>
+</html>
